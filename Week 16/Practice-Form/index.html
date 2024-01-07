@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+
+<body>
+    <!-- Formu ortala -->
+    <center>
+        <form>
+            <!-- Tablo ile form oluşturma amacım içeriğin düzenli bir şekilde durmasını istiyor olmam. -->
+            <table>
+                <!-- Ad alanı -->
+                <tr>
+                    <td><b>Adınız:</b></td>
+                    <td><input type="text" required></td>
+                </tr>
+                <!-- Soyad alanı -->
+                <tr>
+                    <td><b>Soyadınız:</b></td>
+                    <td><input type="text" required></td>
+                </tr>
+                <!-- E-posta alanı -->
+                <tr>
+                    <td><b>E-posta adresiniz:</b></td>
+                    <td><input type="email" required></td>
+                </tr>
+                <!-- Şifre alanı -->
+                <tr>
+                    <td><b>Şifre:</b></td>
+                    <td><input type="password" required></td>
+                </tr>
+                <!-- Şifre doğrulama alanı -->
+                <tr>
+                    <td><b>Şifreyi doğrula:</b></td>
+                    <td><input type="password" name="passwordConfirm" required></td>
+                </tr>
+                <!-- Cinsiyet alanı -->
+                <tr>
+                    <td><b>Cinsiyetiniz:</b></td>
+                    <td>
+                        <label>
+                            <input type="radio" name="gender" value="Erkek">
+                            Erkek
+                        </label>
+                        <label>
+                            <input type="radio" name="gender" value="Kadın">
+                            Kadın
+                        </label>
+                    </td>
+                </tr>
+                <!-- Favori meyve seçimi alanı -->
+                <tr>
+                    <td><b>Favori meyveniz:</b></td>
+                    <td>
+                        <select name="favoriteFruit">
+                            <option value="Elma">Elma</option>
+                            <option value="Muz">Muz</option>
+                            <option value="Çilek">Çilek</option>
+                            <option value="Armut">Armut</option>
+                            <option value="Ananas">Ananas</option>
+                        </select>
+                    </td>
+                </tr>
+                <!-- Varsa mesaj alanı -->
+                <tr>
+                    <td><b>Varsa mesajınız:</b></td>
+                    <td colspan="2"><textarea name="" id="" cols="40" rows="10" placeholder="Enter your message here!"></textarea></td>
+                </tr>
+                <!-- Gönder butonu -->
+                <tr>
+                    <td colspan="2"><input type="submit" value="Gönder"></td>
+                </tr>
+            </table>
+        </form>
+    </center>
+</body>
+
+</html>
