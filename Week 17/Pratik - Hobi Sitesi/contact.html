@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .logo{
+            width: 200px;
+            height: auto;
+            display: block;
+            margin: auto;
+        }
+    </style>
+    <title>İletişim | gezenbilir</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body>
+    <div class="navbar">
+        <img src="logo/logo.png" alt="logo" class="logo">
+        <div class="nav-icons">
+            <a href="index.html" class="icon-home">Ana sayfa</a>
+            <a href="galery.html" class="icon-galery">Galeri</a>
+            <a href="about-us.html" class="icon-about-us">Hakkımızda</a>
+            <a href="contact.html" class="icon-contact">İletişim</a>
+        </div>
+    </div>
+    <div class="section">
+        <br>
+        <h2 class="section h2">Bizimle İletişime Geçin</h2>
+        <table>
+            <tr>
+                <td><label for="name">Adınız:</label></td>
+                <td><input type="text" id="name" name="name" required></td>
+            </tr>
+            <tr>
+                <td><label for="email">E-posta Adresiniz:</label></td>
+                <td><input type="email" id="email" name="email" required></td>
+            </tr>
+            <tr>
+                <td><label for="phone">Telefon Numaranız:</label></td>
+                <td><input type="tel" id="phone" name="phone"></td>
+            </tr>
+            <tr>
+                <td><label for="message">Mesajınız:</label></td>
+                <td><textarea id="message" name="message" rows="5" required></textarea></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><button type="submit">Gönder</button></td>
+            </tr>
+        </table>
+        <br>
+        <hr>
+    </div>
+    <br>
+    <hr>
+    <br>
+    <footer class="footer">
+        <p>&copy; 2024 Gezenbilir - Tüm hakları saklıdır.</p>
+    </footer>
+</body>
+</html>
