@@ -2,8 +2,10 @@
 body {
     margin: 0;
     font-family: sans-serif !important;
-
+    overflow-x: hidden;
 }
+
+
 
 .bg-image{
     background-image: url("assets/hero-man.jpg");
@@ -13,6 +15,17 @@ body {
     background-size: cover; 
     height: 96vh;
 }
+
+ section {
+    width: 100%;
+    overflow-x: hidden;
+ }
+
+ .row {
+    width: 100%;
+ }
+
+ 
 
 .top-zero{
     top: 0;
@@ -76,17 +89,7 @@ body {
     z-index: 5;
 }
 
-.image-around{
-    position: absolute;
-    content: "";
-    top: 50%;
-    left: 50%;
-    width: 110%;
-    height: 60px;
-    transform: translate(-50%, -50%);
-    background-color: lime;
-    z-index: -1;
-}
+
 
 p {
     color: black;
@@ -110,6 +113,14 @@ p {
     flex-direction: column;
 }
 
+#navbar-ul{
+    margin: 0;
+    padding: 0;
+    flex-direction: row;
+    display: flex;
+    align-items: center;
+}
+
 .navbar-button{
     float: center;
     background-color: orange;
@@ -120,6 +131,11 @@ p {
     text-decoration: none;
     padding: 14px 16px;
     margin: 0 10px;
+}
+
+#s1-card{
+    width: 325vw !important;
+    height: auto;
 }
 
 .navbar a:hover {
@@ -409,4 +425,43 @@ p {
     padding: 0;
     padding-top: 1;
     padding-bottom: 1%;
+}
+
+@media screen and (max-width: 577px) {
+    #cards{
+        align-items: center;
+    }
+    .card {
+    
+        margin-bottom: 20px; 
+    }
+    .left {
+        margin-bottom: 1rem;
+    }
+
+    .display-1 {
+        font-size: 2rem;
+    }
+
+    .row #card {
+        flex: 0 0 calc(100% - 16px);
+        margin-bottom: 16px;
+    }
+
+    #nav{
+        flex: 0 0 100%;
+    }
+}
+
+@media screen and (min-width: 577px) {
+    #cards {
+        display:flexbox;
+        flex-wrap:initial;
+        justify-content: space-between;
+    }
+
+    .row #card {
+        flex: 0 0 calc(25% - 16px);
+        margin-bottom: 16px;
+}
 }
