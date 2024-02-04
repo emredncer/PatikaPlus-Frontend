@@ -1,37 +1,51 @@
-
-body {
-    margin: 0;
+body,
+html {
+    margin-top: 0;
+    padding-top: 0;
     font-family: sans-serif !important;
-    overflow-x: hidden;
+
 }
 
+.app {
+    margin-top: 0;
+    position: absolute;
+}
 
-
-.bg-image{
+.bg-image {
     background-image: url("assets/hero-man.jpg");
-    top: 0;
+    margin-top: 0;
     z-index: 0;
     width: 100%;
-    background-size: cover; 
-    height: 96vh;
+    background-size: cover;
+    height: 100%;
 }
 
- section {
-    width: 100%;
-    overflow-x: hidden;
- }
+section {
+    margin-right: 0;
+    margin-left: 0;
+}
 
- .row {
-    width: 100%;
- }
+#section-one {
+    background-color: #f1f8ff;
+    position: relative;
+    display: block;
+    overflow: hidden;
+    margin-right: 0;
+}
 
- 
+.row {
+    margin-right: 0;
+    margin-left: 0;
+    max-width: 1920px;
+    display: flex;
+    flex-wrap: wrap;
+}
 
-.top-zero{
+.top-zero {
     top: 0;
 }
 
-.transparent{
+.transparent {
     background-color: transparent !important;
 }
 
@@ -45,6 +59,14 @@ body {
     top: 0;
     width: 100%;
     z-index: 1000;
+}
+
+.navbar.bg-scroll {
+    background-color: #355592;
+}
+
+navbar nav{
+    float: rig
 }
 
 .orange-line {
@@ -65,7 +87,13 @@ body {
     height: 300px;
 }
 
-.image-around{
+.card {
+    border: none;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.image-around {
     position: absolute;
     content: "";
     top: 50%;
@@ -79,17 +107,27 @@ body {
 }
 
 .triangle-up {
-	width: 0;
-	height: 0;
-	border-left: 25px solid transparent;
-	border-right: 25px solid transparent;
-	border-bottom: 50px solid #cf821d;
+    width: 0;
+    height: 0;
+    border-left: 25px solid transparent;
+    border-right: 25px solid transparent;
+    border-bottom: 50px solid #cf821d;
     position: relative;
-    
+
     z-index: 5;
 }
 
-
+.image-around {
+    position: absolute;
+    content: "";
+    top: 50%;
+    left: 50%;
+    width: 110%;
+    height: 60px;
+    transform: translate(-50%, -50%);
+    background-color: lime;
+    z-index: -1;
+}
 
 p {
     color: black;
@@ -113,15 +151,7 @@ p {
     flex-direction: column;
 }
 
-#navbar-ul{
-    margin: 0;
-    padding: 0;
-    flex-direction: row;
-    display: flex;
-    align-items: center;
-}
-
-.navbar-button{
+.navbar-button {
     float: center;
     background-color: orange;
     color: white;
@@ -131,11 +161,6 @@ p {
     text-decoration: none;
     padding: 14px 16px;
     margin: 0 10px;
-}
-
-#s1-card{
-    width: 325vw !important;
-    height: auto;
 }
 
 .navbar a:hover {
@@ -150,12 +175,12 @@ p {
 
 .active-button {
     background-color: #ffc207 !important;
-    border: none ;
+    border: none;
 }
 
-.deactive-button{
-    background-color: rgb(46,94,156) !important;
-    border: none ;
+.deactive-button {
+    background-color: rgb(46, 94, 156) !important;
+    border: none;
 }
 
 .clip {
@@ -165,9 +190,16 @@ p {
     width: 300px;
     clip-path: polygon(5% 65%, 15% 65%, 15% 55%, 85% 55%, 85% 65%, 95% 65%, 95% 85%, 85% 85%, 85% 95%, 15% 95%, 15% 85%, 5% 85%);
     position: absolute;
-    top: 0; 
+    top: 0;
     left: 0;
 }
+
+.img-class {
+    min-width: 576px;
+    min-height: 400px;
+}
+
+
 
 .shape-with-text h6 {
     position: absolute;
@@ -226,7 +258,7 @@ p {
 .interactiveBox1 .interactiveBorderBottom,
 .interactiveBox1 .interactiveBorderLeft,
 .interactiveBox1 .interactiveBorderRight {
-    transition:  bottom 0.3s, left 0.3s, right 0.3s, top 0.3s;
+    transition: bottom 0.3s, left 0.3s, right 0.3s, top 0.3s;
 }
 
 .interactiveBox1:hover .clip {
@@ -260,10 +292,11 @@ p {
     bottom: 10%;
     left: 100%;
 }
+
 .interactiveBox2 .interactiveBorderBottom,
 .interactiveBox2 .interactiveBorderLeft,
 .interactiveBox2 .interactiveBorderRight {
-    transition:  bottom 0.3s, left 0.3s, right 0.3s, top 0.3s;
+    transition: bottom 0.3s, left 0.3s, right 0.3s, top 0.3s;
 }
 
 
@@ -286,10 +319,11 @@ p {
     bottom: 10%;
     left: 100%;
 }
+
 .interactiveBox3 .interactiveBorderBottom,
 .interactiveBox3 .interactiveBorderLeft,
 .interactiveBox3 .interactiveBorderRight {
-    transition:  bottom 0.3s, left 0.3s, right 0.3s, top 0.3s;
+    transition: bottom 0.3s, left 0.3s, right 0.3s, top 0.3s;
 }
 
 
@@ -350,7 +384,7 @@ p {
     margin: 0 10px;
 }
 
-.cart-btn{
+.cart-btn {
     background-color: #ffffff;
     color: black;
     font-weight: bold;
@@ -361,7 +395,7 @@ p {
     transition: background-color 0.3s, color 0.3s;
 }
 
-.cart-btn:hover{
+.cart-btn:hover {
     border-radius: 6%;
     background-color: black;
     color: #ffffff;
@@ -369,23 +403,23 @@ p {
     border: none;
 }
 
-.right-triangle{
-    
+.right-triangle {
+
     clip-path: polygon(0 0, 100% 100%, 100% 0);
     width: 42px;
     height: 42px;
     background-color: #8096be;
-    
+
 }
 
 
-.left-triangle{
+.left-triangle {
     clip-path: polygon(0 0, 0% 100%, 100% 0);
     width: 42px;
     height: 42px;
     background-color: #8096be;
-    
-    
+
+
 }
 
 .footer {
@@ -394,7 +428,7 @@ p {
     width: 100%;
     height: 60px;
     line-height: 60px;
-    
+
 }
 
 .list-container {
@@ -412,12 +446,12 @@ p {
     font-size: medium;
 }
 
-.foooter-text{
+.foooter-text {
     font-size: medium;
-    color: white;    
+    color: white;
 }
 
-.cart-btn-footer{
+.cart-btn-footer {
     display: block;
     background-color: transparent;
     color: white;
@@ -427,14 +461,51 @@ p {
     padding-bottom: 1%;
 }
 
+.col-10 {
+    width: 100%;
+}
+
+.display-1 {
+    font-weight: 800;
+    color: white;
+    font-size: 2.5rem;
+    margin-top: 1rem;
+    line-height: 1.2;
+}
+
+.container {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+}
+
+.left {
+    width: 100%;
+    text-align: left;
+    margin-bottom: 2rem;
+}
+
+.btn-container{
+    display: flex;
+    justify-content: space-evenly;
+}
+
 @media screen and (max-width: 577px) {
-    #cards{
-        align-items: center;
-    }
     .card {
-    
-        margin-bottom: 20px; 
+        margin-bottom: 20px;
     }
+
+    #shop-cards{
+        display:inline-block;
+        align-items: center;
+        justify-content:stretch;
+        text-align: center;
+    }
+
+    .shop-card {
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
     .left {
         margin-bottom: 1rem;
     }
@@ -446,22 +517,25 @@ p {
     .row #card {
         flex: 0 0 calc(100% - 16px);
         margin-bottom: 16px;
-    }
-
-    #nav{
-        flex: 0 0 100%;
+        margin-right: 0;
+        padding-right: 0;
     }
 }
 
 @media screen and (min-width: 577px) {
     #cards {
-        display:flexbox;
-        flex-wrap:initial;
+        display: flexbox;
+        flex-wrap: initial;
         justify-content: space-between;
     }
 
     .row #card {
         flex: 0 0 calc(25% - 16px);
         margin-bottom: 16px;
-}
+        margin-right: 0;
+    }
+    .shop-card {
+        flex: 0 0 calc(25% - 20px); 
+        margin-bottom: 20px; 
+    }
 }
